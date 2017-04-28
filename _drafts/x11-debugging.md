@@ -5,12 +5,13 @@ title: "Debugging X11"
 
 For the last few weeks I've been working to port one of our products from Qt 4.8 to Qt 5.8.  Most
 of the process has been relatively painless with the exception of our system tray.  The system tray
-implementes the legacy [System Tray Protocol Specification](https://specifications.freedesktop.org/systemtray-spec/systemtray-spec-0.2.html)
-and uses some X11 wizardry (XEmbed) to embed windows from one appliction into another.
+relise on some X11 wizardry to embed windows from one application into another (see the
+[System Tray Protocol Specification](https://specifications.freedesktop.org/systemtray-spec/systemtray-spec-0.2.html)
+ and XEmbed)
 
-Qt 4 support for XEmbed was excellent but it must have not been widely used enough and it
-seems to have been broken in Qt5. In the course of debugging X11 issues I have come
-across a few tools that are indespensible for troubleshooting X11 behaviors. 
+Qt 4 support for this wizardy was excellent but I suspect it is not widely used and is broken in
+Qt5. In the course of debugging these issues I have come across a few tools that are
+indespensible for troubleshooting X1 problems.
 
 # Xephyr - An X server inside your X server
 
