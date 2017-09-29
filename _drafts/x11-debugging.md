@@ -9,7 +9,7 @@ relise on some X11 wizardry to embed windows from one application into another (
 [System Tray Protocol Specification](https://specifications.freedesktop.org/systemtray-spec/systemtray-spec-0.2.html)
  and XEmbed)
 
-Qt 4 support for this wizardy was excellent but I suspect it is not widely used and is broken in
+Qt 4 support for this wizardry was excellent but I suspect it is not widely used and is broken in
 Qt5. In the course of debugging these issues I have come across a few tools that are
 indespensible for troubleshooting X1 problems.
 
